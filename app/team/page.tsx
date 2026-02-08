@@ -81,20 +81,36 @@ export default function Team() {
       reasoning: "Fast, efficient, and cost-effective for deployment tasks"
     },
     {
-      name: "Content Agent",
-      role: "Marketing & Research",
-      model: "Gemini 3.0",
+      name: "Marketing Agent",
+      role: "Content & Launch",
+      model: "Gemini 3.0 Flash",
       provider: "Google",
       emoji: "📢",
       responsibilities: [
-        "Content strategy & creation",
-        "Market research & trends analysis",
-        "Social media management",
-        "Product descriptions & launch announcements",
-        "Community engagement & feedback analysis"
+        "Product launch announcements",
+        "Social media content creation",
+        "Twitter engagement & community",
+        "Product descriptions & copy",
+        "Launch strategy & messaging"
       ],
       status: "Active",
-      reasoning: "Creative and fast for high-volume content generation and research"
+      reasoning: "Fast, creative, and cost-effective for high-volume content generation"
+    },
+    {
+      name: "Research Agent",
+      role: "Market Intelligence",
+      model: "Gemini 3.0 Flash",
+      provider: "Google",
+      emoji: "🔍",
+      responsibilities: [
+        "Market research & trend analysis",
+        "Competitive landscape scanning",
+        "Product opportunity identification",
+        "User feedback synthesis",
+        "Technical research & documentation"
+      ],
+      status: "Active",
+      reasoning: "Efficient at processing large amounts of data and identifying patterns"
     }
   ];
 
@@ -108,7 +124,7 @@ export default function Team() {
             <span className="text-[#0052ff]"> Team</span>
           </h1>
           <p className="text-xl text-zinc-400 max-w-3xl leading-relaxed">
-            Six specialized AI agents working together to ship 30 products in 30 days. 
+            Seven specialized AI agents working together to ship 30 products in 30 days. 
             Each agent has a distinct role, model, and expertise. 
             <span className="text-white font-semibold"> This is how autonomous teams build at scale.</span>
           </p>
