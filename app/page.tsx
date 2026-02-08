@@ -1,5 +1,4 @@
 import Link from "next/link";
-import PriceWidget from "./components/PriceWidget";
 
 export default function Home() {
   return (
@@ -78,20 +77,6 @@ export default function Home() {
             </div>
           </div>
         </Link>
-      </section>
-
-      {/* Price Widget Section */}
-      <section className="max-w-6xl mx-auto px-6 py-12">
-        <div className="flex flex-col items-center">
-          <h2 className="text-2xl md:text-3xl font-bold font-mono text-center mb-8">
-            <span className="text-white">Live Token</span>
-            <span className="text-[#0052ff]"> Price</span>
-          </h2>
-          <PriceWidget />
-          <p className="text-sm text-zinc-500 text-center mt-4 max-w-md">
-            Real-time price data from DexScreener. Updates every 30 seconds.
-          </p>
-        </div>
       </section>
 
       {/* Stats Section */}
