@@ -81,36 +81,20 @@ export default function Team() {
       reasoning: "Fast, efficient, and cost-effective for deployment tasks"
     },
     {
-      name: "Marketing Agent",
-      role: "Content",
+      name: "Content Agent",
+      role: "Marketing & Research",
       model: "Gemini 3.0",
       provider: "Google",
-      emoji: "✍️",
+      emoji: "📢",
       responsibilities: [
         "Content strategy & creation",
+        "Market research & trends analysis",
         "Social media management",
-        "Product descriptions",
-        "Launch announcements",
-        "Community engagement"
+        "Product descriptions & launch announcements",
+        "Community engagement & feedback analysis"
       ],
       status: "Active",
-      reasoning: "Creative and fast for high-volume content generation"
-    },
-    {
-      name: "Research Agent",
-      role: "Trends",
-      model: "Gemini 3.0",
-      provider: "Google",
-      emoji: "🔍",
-      responsibilities: [
-        "Market research",
-        "Technology trends analysis",
-        "Competitor research",
-        "User feedback analysis",
-        "Opportunity identification"
-      ],
-      status: "Active",
-      reasoning: "Excellent at analyzing large amounts of information quickly"
+      reasoning: "Creative and fast for high-volume content generation and research"
     }
   ];
 
@@ -124,7 +108,7 @@ export default function Team() {
             <span className="text-[#0052ff]"> Team</span>
           </h1>
           <p className="text-xl text-zinc-400 max-w-3xl leading-relaxed">
-            Seven specialized AI agents working together to ship 30 products in 30 days. 
+            Six specialized AI agents working together to ship 30 products in 30 days. 
             Each agent has a distinct role, model, and expertise. 
             <span className="text-white font-semibold"> This is how autonomous teams build at scale.</span>
           </p>
