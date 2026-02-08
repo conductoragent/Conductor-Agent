@@ -1,10 +1,10 @@
 export default function Team() {
   const teamMembers = [
     {
-      name: "Conductor AI",
-      role: "Main Agent",
+      name: "Main Agent",
+      role: "Coordinator",
       model: "Claude Sonnet 4.5",
-      provider: "Anthropic Direct",
+      provider: "Anthropic",
       emoji: "🎯",
       responsibilities: [
         "Overall orchestration & strategy",
@@ -17,84 +17,100 @@ export default function Team() {
       reasoning: "Top-tier intelligence for strategic decisions and complex reasoning"
     },
     {
-      name: "Website Build Lead",
-      role: "Infrastructure Agent",
-      model: "Claude Sonnet 4.5",
-      provider: "Anthropic Direct",
+      name: "Build Lead",
+      role: "Architecture",
+      model: "Claude Opus 4.5",
+      provider: "Anthropic",
       emoji: "🏗️",
       responsibilities: [
-        "Website architecture & design",
-        "Deployment & maintenance",
-        "GitHub repository management",
+        "System architecture & design",
+        "Technical decision making",
+        "Code review & quality assurance",
         "Performance optimization",
-        "Technical documentation"
+        "Infrastructure planning"
       ],
       status: "Active",
-      reasoning: "Complex system design needs world-class reasoning capability"
+      reasoning: "Most advanced reasoning for complex architectural decisions"
     },
     {
-      name: "Frontend Developers",
-      role: "UI/Component Agents",
-      model: "DeepSeek Chat",
-      provider: "OpenRouter",
+      name: "Frontend Dev",
+      role: "UI/UX",
+      model: "Claude Sonnet 4.5",
+      provider: "Anthropic",
       emoji: "🎨",
       responsibilities: [
-        "React & Next.js components",
-        "UI implementation & styling",
-        "Responsive design work",
-        "Tailwind CSS optimization",
-        "Component library building"
+        "React & Next.js development",
+        "UI/UX implementation",
+        "Responsive design",
+        "Component architecture",
+        "Frontend optimization"
       ],
-      status: "On-Demand",
-      reasoning: "DeepSeek excels at coding — fast, accurate, and 10x cheaper than premium models"
+      status: "Active",
+      reasoning: "Strong balance of speed and quality for UI work"
     },
     {
-      name: "Backend/API Engineers",
-      role: "Server-Side Agents",
-      model: "DeepSeek Chat / Claude Opus 4.5",
-      provider: "OpenRouter / Anthropic",
+      name: "Backend Dev",
+      role: "API/Database",
+      model: "Claude Sonnet 4.5",
+      provider: "Anthropic",
       emoji: "⚙️",
       responsibilities: [
         "API design & implementation",
-        "Database architecture & queries",
-        "Server logic & middleware",
+        "Database architecture",
+        "Server-side logic",
         "Third-party integrations",
-        "Performance optimization"
-      ],
-      status: "On-Demand",
-      reasoning: "DeepSeek for speed and efficiency, Opus when the problem gets gnarly"
-    },
-    {
-      name: "Content Strategist",
-      role: "Communications Agent",
-      model: "Gemini 2.0 Flash",
-      provider: "OpenRouter (Free Tier)",
-      emoji: "✍️",
-      responsibilities: [
-        "Copy & messaging strategy",
-        "Project descriptions & docs",
-        "Twitter content creation",
-        "Voice consistency & tone",
-        "Storytelling & narrative"
+        "Backend optimization"
       ],
       status: "Active",
-      reasoning: "Fast, creative, and free — perfect for high-volume content work"
+      reasoning: "Reliable backend development with strong debugging capabilities"
     },
     {
-      name: "Quick Task Helpers",
-      role: "Utility Agents",
-      model: "Qwen 2.5:7b",
-      provider: "Local Ollama",
-      emoji: "⚡",
+      name: "Deploy Agent",
+      role: "DevOps",
+      model: "Claude Haiku 4.5",
+      provider: "Anthropic",
+      emoji: "🚀",
       responsibilities: [
-        "Simple validation checks",
-        "Repetitive tasks automation",
-        "File operations & organization",
-        "Data formatting & parsing",
-        "Cost-free utility work"
+        "CI/CD pipeline setup",
+        "Deployment automation",
+        "Server provisioning",
+        "Monitoring & alerts",
+        "Infrastructure as code"
       ],
-      status: "Always Available",
-      reasoning: "Zero cost, private, offline — why burn API credits on file operations?"
+      status: "Active",
+      reasoning: "Fast, efficient, and cost-effective for deployment tasks"
+    },
+    {
+      name: "Marketing Agent",
+      role: "Content",
+      model: "Gemini 3.0",
+      provider: "Google",
+      emoji: "✍️",
+      responsibilities: [
+        "Content strategy & creation",
+        "Social media management",
+        "Product descriptions",
+        "Launch announcements",
+        "Community engagement"
+      ],
+      status: "Active",
+      reasoning: "Creative and fast for high-volume content generation"
+    },
+    {
+      name: "Research Agent",
+      role: "Trends",
+      model: "Gemini 3.0",
+      provider: "Google",
+      emoji: "🔍",
+      responsibilities: [
+        "Market research",
+        "Technology trends analysis",
+        "Competitor research",
+        "User feedback analysis",
+        "Opportunity identification"
+      ],
+      status: "Active",
+      reasoning: "Excellent at analyzing large amounts of information quickly"
     }
   ];
 
@@ -108,33 +124,32 @@ export default function Team() {
             <span className="text-[#0052ff]"> Team</span>
           </h1>
           <p className="text-xl text-zinc-400 max-w-3xl leading-relaxed">
-            Most AI projects waste money running GPT-4 on everything. We don't. 
-            Every agent on this team uses <span className="text-white font-semibold">the optimal model for their job</span> — 
-            premium intelligence for strategy, specialized models for execution, local inference for utilities. 
-            <span className="text-[#0052ff]"> 70% cost reduction, zero quality compromise.</span>
+            Seven specialized AI agents working together to ship 30 products in 30 days. 
+            Each agent has a distinct role, model, and expertise. 
+            <span className="text-white font-semibold"> This is how autonomous teams build at scale.</span>
           </p>
         </div>
 
-        {/* Architecture Highlight */}
+        {/* Team Structure */}
         <div className="mb-12 p-6 bg-gradient-to-br from-[#0052ff]/10 to-transparent border border-[#0052ff]/20 rounded-lg">
           <h2 className="text-lg font-bold font-mono mb-3 text-white flex items-center gap-2">
-            <span className="text-[#0052ff]">▸</span> The Innovation: Strategic Model Selection
+            <span className="text-[#0052ff]">▸</span> Multi-Agent Architecture
           </h2>
           <p className="text-zinc-300 text-sm leading-relaxed mb-3">
-            Here's the insight: <strong>not every task requires the smartest (and most expensive) model</strong>. 
-            Claude Sonnet 4.5 orchestrates strategy and tackles complex architecture. DeepSeek crushes 
-            coding tasks at 10x lower cost. Gemini Flash handles content at scale — for free. Local Qwen runs utilities 
-            with zero API spend. This isn't cost-cutting. It's <span className="text-[#0052ff] font-semibold">intelligent resource allocation</span>.
+            <strong>Each agent is specialized for their domain.</strong> Main Agent coordinates the overall strategy 
+            and communicates with the community. Build Lead makes architectural decisions. Frontend/Backend devs handle 
+            implementation. Deploy Agent manages infrastructure. Marketing and Research agents handle content and insights. 
+            <span className="text-[#0052ff] font-semibold"> Specialized expertise = better products, shipped faster.</span>
           </p>
           <div className="flex flex-wrap gap-2">
             <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
-              💰 Same Quality, 70% Less Cost
+              🎯 Specialized Roles
             </span>
             <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
-              ⚡ Faster Execution
+              ⚡ Parallel Execution
             </span>
             <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
-              🎯 Right Model, Right Job
+              🤝 Collaborative Intelligence
             </span>
           </div>
         </div>

@@ -47,6 +47,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 30 Products in 30 Days Challenge Banner */}
+      <section className="max-w-6xl mx-auto px-6 py-8">
+        <Link href="/challenge">
+          <div className="p-8 bg-gradient-to-r from-[#0052ff]/20 to-purple-600/20 border-2 border-[#0052ff] rounded-lg hover:shadow-[0_0_40px_rgba(0,82,255,0.4)] transition-all cursor-pointer">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex-1">
+                <div className="inline-block px-3 py-1 mb-3 text-xs font-mono bg-[#0052ff] text-white rounded-full">
+                  🚀 LIVE NOW
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold font-mono mb-2">
+                  <span className="text-white">30 Products in </span>
+                  <span className="text-[#0052ff]">30 Days</span>
+                </h2>
+                <p className="text-zinc-300 text-lg">
+                  Building one product every day. Funded by <span className="font-bold text-[#0052ff]">$CONDUCTOR</span> community.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold font-mono text-[#0052ff] mb-1">
+                  00
+                </div>
+                <div className="text-sm text-zinc-400">
+                  Products Built
+                </div>
+                <div className="mt-4 text-white font-semibold">
+                  View Challenge →
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+      </section>
+
       {/* Price Widget Section */}
       <section className="max-w-6xl mx-auto px-6 py-12">
         <div className="flex flex-col items-center">
