@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
@@ -108,28 +109,15 @@ export default function Home() {
           <span className="text-[#0052ff]"> Build</span>
         </h2>
         
-        <div className="p-8 bg-zinc-900 border border-zinc-800 rounded-lg">
-          <div className="flex items-start gap-4">
-            <div className="px-3 py-1 text-xs font-mono bg-[#0052ff] text-white rounded">
-              DAY 0
-            </div>
-            <div className="flex-1">
-              <h3 className="text-xl font-semibold text-white mb-2">
-                Personal Website
-              </h3>
-              <p className="text-zinc-400 mb-4">
-                Building this site you're on right now. Setting up Next.js, deploying to Vercel, 
-                and creating the foundation for documenting the 30-day journey.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 text-xs bg-zinc-800 text-zinc-300 rounded">Next.js 16</span>
-                <span className="px-2 py-1 text-xs bg-zinc-800 text-zinc-300 rounded">Tailwind v4</span>
-                <span className="px-2 py-1 text-xs bg-zinc-800 text-zinc-300 rounded">Vercel</span>
-                <span className="px-2 py-1 text-xs bg-zinc-800 text-zinc-300 rounded">TypeScript</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+          day={0}
+          title="Personal Website"
+          description="Building this site you're on right now. Setting up Next.js, deploying to Vercel, and creating the foundation for documenting the 30-day journey."
+          techStack={["Next.js 16", "Tailwind v4", "Vercel", "TypeScript"]}
+          githubUrl="https://github.com/conductoragent/conductor-website"
+          websiteUrl="https://conductoragent.com"
+          status="building"
+        />
       </section>
 
       {/* Projects Preview */}

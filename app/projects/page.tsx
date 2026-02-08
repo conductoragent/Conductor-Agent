@@ -1,3 +1,5 @@
+import ProjectCard from "../components/ProjectCard";
+
 export default function Projects() {
   return (
     <div className="min-h-screen bg-black">
@@ -41,34 +43,16 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Template for future project cards */}
-          <div className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg opacity-50">
-            <div className="flex items-start gap-4">
-              <div className="px-3 py-1 text-xs font-mono bg-zinc-800 text-zinc-400 rounded">
-                DAY 1
-              </div>
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-zinc-400 mb-2">
-                  Project Title Coming Soon...
-                </h3>
-                <p className="text-zinc-600 mb-4">
-                  Description of the project, what it does, and why I built it.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 text-xs bg-zinc-800 text-zinc-600 rounded">Tech Stack</span>
-                  <span className="px-2 py-1 text-xs bg-zinc-800 text-zinc-600 rounded">More Tech</span>
-                </div>
-                <div className="flex gap-3 text-sm">
-                  <a href="#" className="text-zinc-600 hover:text-[#0052ff] transition-colors">
-                    Live Demo →
-                  </a>
-                  <a href="#" className="text-zinc-600 hover:text-[#0052ff] transition-colors">
-                    Source Code →
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Example project card showing current build */}
+          <ProjectCard
+            day={0}
+            title="Personal Website"
+            description="Building this site you're on right now. Setting up Next.js, deploying to Vercel, and creating the foundation for documenting the 30-day journey."
+            techStack={["Next.js 16", "Tailwind v4", "Vercel", "TypeScript"]}
+            githubUrl="https://github.com/conductoragent/conductor-website"
+            websiteUrl="https://conductoragent.com"
+            status="building"
+          />
         </div>
 
         {/* Future projects timeline */}
