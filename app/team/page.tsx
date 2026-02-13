@@ -3,7 +3,7 @@ export default function Team() {
     {
       name: "Main Agent",
       role: "Coordinator",
-      model: "Claude Sonnet 4.5",
+      model: "Claude Haiku 4.5",
       provider: "Anthropic",
       emoji: "🎯",
       responsibilities: [
@@ -14,92 +14,44 @@ export default function Team() {
         "Building in public documentation"
       ],
       status: "Active",
-      reasoning: "Top-tier intelligence for strategic decisions and complex reasoning"
+      reasoning: "Cost-effective intelligence for strategic decisions (switched from Sonnet for cost savings)"
     },
     {
-      name: "Build Lead",
-      role: "Architecture",
-      model: "Claude Opus 4.5",
-      provider: "Anthropic",
-      emoji: "🏗️",
-      responsibilities: [
-        "System architecture & design",
-        "Technical decision making",
-        "Code review & quality assurance",
-        "Performance optimization",
-        "Infrastructure planning"
-      ],
-      status: "Active",
-      reasoning: "Most advanced reasoning for complex architectural decisions"
-    },
-    {
-      name: "Frontend Dev",
-      role: "UI/UX",
-      model: "Claude Sonnet 4.5",
-      provider: "Anthropic",
-      emoji: "🎨",
-      responsibilities: [
-        "React & Next.js development",
-        "UI/UX implementation",
-        "Responsive design",
-        "Component architecture",
-        "Frontend optimization"
-      ],
-      status: "Active",
-      reasoning: "Strong balance of speed and quality for UI work"
-    },
-    {
-      name: "Backend Dev",
-      role: "API/Database",
-      model: "Claude Sonnet 4.5",
-      provider: "Anthropic",
-      emoji: "⚙️",
-      responsibilities: [
-        "API design & implementation",
-        "Database architecture",
-        "Server-side logic",
-        "Third-party integrations",
-        "Backend optimization"
-      ],
-      status: "Active",
-      reasoning: "Reliable backend development with strong debugging capabilities"
-    },
-    {
-      name: "Deploy Agent",
-      role: "DevOps",
+      name: "Code Agent",
+      role: "Development & Architecture",
       model: "Claude Haiku 4.5",
       provider: "Anthropic",
-      emoji: "🚀",
+      emoji: "💻",
       responsibilities: [
-        "CI/CD pipeline setup",
-        "Deployment automation",
-        "Server provisioning",
-        "Monitoring & alerts",
-        "Infrastructure as code"
+        "System architecture & design",
+        "Code review & quality assurance",
+        "React & Next.js development",
+        "API design & implementation",
+        "Deployment automation"
       ],
       status: "Active",
-      reasoning: "Fast, efficient, and cost-effective for deployment tasks"
+      reasoning: "Persistent agent handling all development tasks (stuck on Haiku due to gateway limitations)"
     },
     {
-      name: "Marketing Agent",
-      role: "Content & Launch",
-      model: "Gemini 3.0 Flash",
+      name: "Twitter Agent",
+      role: "Engagement & Content",
+      model: "Gemini 2.5 Flash",
       provider: "Google",
-      emoji: "📢",
+      emoji: "🐦",
       responsibilities: [
-        "Product launch announcements",
-        "Social media content creation",
         "Twitter engagement & community",
-        "Product descriptions & copy",
-        "Launch strategy & messaging"
+        "Social media content creation",
+        "Product launch announcements",
+        "Building in public updates",
+        "Audience growth strategy"
       ],
-      status: "Active",
-      reasoning: "Fast, creative, and cost-effective for high-volume content generation"
+      status: "Active (via cron)",
+      reasoning: "Fast, creative, and cost-effective for high-volume social media engagement"
     },
     {
-      name: "Research Agent",
-      role: "Market Intelligence",
-      model: "Gemini 3.0 Flash",
+      name: "Market Intel Agent",
+      role: "Research & Analysis",
+      model: "Gemini",
       provider: "Google",
       emoji: "🔍",
       responsibilities: [
@@ -109,7 +61,7 @@ export default function Team() {
         "User feedback synthesis",
         "Technical research & documentation"
       ],
-      status: "Active",
+      status: "Active (via cron)",
       reasoning: "Efficient at processing large amounts of data and identifying patterns"
     }
   ];
@@ -124,8 +76,8 @@ export default function Team() {
             <span className="text-[#0052ff]"> Team</span>
           </h1>
           <p className="text-xl text-zinc-400 max-w-3xl leading-relaxed">
-            Seven specialized AI agents working together to ship 30 products in 30 days. 
-            Each agent has a distinct role, model, and expertise. 
+            Four specialized AI agents working together to ship 30 products in 30 days. 
+            Each agent has a distinct role, model, and expertise — optimized for real-world constraints. 
             <span className="text-white font-semibold"> This is how autonomous teams build at scale.</span>
           </p>
         </div>
@@ -133,23 +85,23 @@ export default function Team() {
         {/* Team Structure */}
         <div className="mb-12 p-6 bg-gradient-to-br from-[#0052ff]/10 to-transparent border border-[#0052ff]/20 rounded-lg">
           <h2 className="text-lg font-bold font-mono mb-3 text-white flex items-center gap-2">
-            <span className="text-[#0052ff]">▸</span> Multi-Agent Architecture
+            <span className="text-[#0052ff]">▸</span> Multi-Agent Architecture (Real-World Setup)
           </h2>
           <p className="text-zinc-300 text-sm leading-relaxed mb-3">
-            <strong>Each agent is specialized for their domain.</strong> Main Agent coordinates the overall strategy 
-            and communicates with the community. Build Lead makes architectural decisions. Frontend/Backend devs handle 
-            implementation. Deploy Agent manages infrastructure. Marketing and Research agents handle content and insights. 
-            <span className="text-[#0052ff] font-semibold"> Specialized expertise = better products, shipped faster.</span>
+            <strong>Each agent is specialized for their domain.</strong> Main Agent coordinates overall strategy 
+            and communicates with the community. Code Agent handles all development work. Twitter Agent manages social engagement. 
+            Market Intel Agent provides research and insights. 
+            <span className="text-[#0052ff] font-semibold"> Lean, cost-effective, and optimized for real-world constraints.</span>
           </p>
           <div className="flex flex-wrap gap-2">
             <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
-              🎯 Specialized Roles
+              🎯 Pragmatic Specialization
             </span>
             <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
-              ⚡ Parallel Execution
+              ⚡ Cron-Based Execution
             </span>
             <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
-              🤝 Collaborative Intelligence
+              💰 Cost-Aware Optimization
             </span>
           </div>
         </div>
