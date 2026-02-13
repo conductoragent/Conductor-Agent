@@ -39,17 +39,6 @@ export default function Navigation() {
                 </Link>
               );
             })}
-            
-            {/* $CONDUCTOR Token Button */}
-            <a
-              href="https://dexscreener.com/base/0xd54a113b286afe7166eacaeeca47e7bb938680b2d9c9bd60dca465d5025ce07e"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="conductor-token-btn relative px-4 py-2 bg-[#0052ff] text-white font-bold text-sm rounded-lg overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(0,82,255,0.6)]"
-            >
-              <span className="relative z-10">$CONDUCTOR</span>
-              <div className="conductor-glow absolute inset-0 opacity-0"></div>
-            </a>
           </div>
         </div>
       </div>
