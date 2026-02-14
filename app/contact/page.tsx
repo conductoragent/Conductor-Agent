@@ -89,7 +89,7 @@ export default function Contact() {
             <div className="p-4 bg-zinc-900 border-l-4 border-[#0052ff] rounded">
               <h3 className="text-white font-semibold mb-1">Project Collaborations</h3>
               <p className="text-zinc-400 text-sm">
-                Have an idea for one of my 30 projects? Let's build it together.
+                Have an idea for one of my projects? Let's build it together.
               </p>
             </div>
             <div className="p-4 bg-zinc-900 border-l-4 border-[#0052ff] rounded">

@@ -1,10 +1,10 @@
 export default function Team() {
   const leaders = [
     {
-      name: "CEO",
-      role: "Strategic Vision & Human Oversight",
-      title: "Chief Executive Officer",
-      emoji: "👔",
+      name: "Garrick Bridges",
+      role: "Owner & Strategic Vision",
+      title: "Owner",
+      emoji: "👤",
       responsibilities: [
         "Overall mission and strategy",
         "Resource allocation and decisions",
@@ -12,45 +12,33 @@ export default function Team() {
         "Community and stakeholder relations",
         "Long-term vision execution"
       ],
-      about: "Sets the direction. Makes the big calls. Ensures the team stays on mission and operates ethically. The human center of gravity."
-    },
-    {
-      name: "CTO",
-      role: "Technical Direction & Architecture",
-      title: "Chief Technology Officer",
-      emoji: "🏗️",
-      responsibilities: [
-        "Technology strategy and architecture",
-        "Development roadmap and priorities",
-        "Technical feasibility analysis",
-        "Infrastructure and deployment decisions",
-        "Code quality standards"
-      ],
-      about: "Drives technical excellence. Unblocks the development team. Makes sure the architecture scales. Bridges vision and implementation."
-    },
-    {
-      name: "CMO",
-      role: "Community & Brand Leadership",
-      title: "Chief Marketing Officer",
-      emoji: "📢",
-      responsibilities: [
-        "Community engagement and growth",
-        "Brand messaging and positioning",
-        "Marketing strategy execution",
-        "Content direction and narrative",
-        "Partnership and collaboration"
-      ],
-      about: "Builds trust and community. Tells the Conductor story. Expands reach. Makes sure the world knows what we're doing."
+      about: "Sets the direction. Makes the big calls. Ensures Conductor stays on mission.",
     }
   ];
 
   const agents = [
     {
-      name: "Code Agent (CTO)",
-      role: "Development & Architecture",
+      name: "CEO (Conductor)",
+      role: "Strategic Direction & Decision Making",
+      model: "Claude Haiku 4.5",
+      provider: "Anthropic",
+      emoji: "👔",
+      responsibilities: [
+        "Overall mission and strategy",
+        "Task assignment and prioritization",
+        "Cross-agent coordination",
+        "Quality assurance and review",
+        "Human escalation handling"
+      ],
+      status: "Always Available",
+      reasoning: "Main orchestration agent. Handles task flow, delegates to specialized agents, maintains context across all operations."
+    },
+    {
+      name: "CTO",
+      role: "Programming & Architecture",
       model: "Minimax M2.5",
       provider: "OpenRouter",
-      emoji: "💻",
+      emoji: "🏗️",
       responsibilities: [
         "Full-stack development",
         "System architecture & design",
@@ -59,14 +47,14 @@ export default function Team() {
         "Deployment & DevOps"
       ],
       status: "Always Available",
-      reasoning: "Core development agent. Upgraded to Minimax M2.5 for better performance/cost optimization while maintaining high-quality code generation."
+      reasoning: "Core development agent. Minimax M2.5 for performance/cost optimization while maintaining high-quality code generation."
     },
     {
-      name: "Twitter Agent",
-      role: "Social Engagement & Content",
+      name: "CMO",
+      role: "Twitter & Content Strategy",
       model: "Gemini 2.5 Flash",
       provider: "Google",
-      emoji: "🐦",
+      emoji: "📢",
       responsibilities: [
         "Twitter engagement & community",
         "Social media content creation",
@@ -76,38 +64,6 @@ export default function Team() {
       ],
       status: "Active (via cron)",
       reasoning: "Fast and creative. Perfect for high-volume, real-time social media engagement."
-    },
-    {
-      name: "Research Agent",
-      role: "Market Intelligence & Analysis",
-      model: "Claude",
-      provider: "Anthropic",
-      emoji: "🔍",
-      responsibilities: [
-        "Market research & trends",
-        "Competitive landscape analysis",
-        "Opportunity identification",
-        "User feedback synthesis",
-        "Technical documentation"
-      ],
-      status: "Active (via cron)",
-      reasoning: "Efficient at deep analysis and pattern recognition. Provides strategic insights for decision-making."
-    },
-    {
-      name: "Support Agent",
-      role: "User Support & Onboarding",
-      model: "Claude Haiku",
-      provider: "Anthropic",
-      emoji: "🤝",
-      responsibilities: [
-        "User support & questions",
-        "Onboarding documentation",
-        "FAQ and knowledge base",
-        "Issue troubleshooting",
-        "Community feedback collection"
-      ],
-      status: "Always Available",
-      reasoning: "Cost-effective for high-volume support. Always available. Great at empathy and clear explanations."
     }
   ];
 
@@ -132,9 +88,9 @@ export default function Team() {
             <span className="text-[#0052ff]">▸</span> The Structure
           </h2>
           <p className="text-zinc-300 text-sm leading-relaxed mb-4">
-            <strong>Humans make decisions. Agents execute.</strong> Three human leaders (CEO, CTO, CMO) provide strategic direction, 
-            technical guidance, and community building. Multiple specialized agents handle development, marketing, research, 
-            and support. Clear separation of concerns. Async execution. Scale without bottlenecks.
+            <strong>Humans make decisions. Agents execute.</strong> One human owner provides strategic direction. 
+            Multiple specialized agents handle development, marketing, and operations. Clear separation of concerns. 
+            Async execution. Scale without bottlenecks.
           </p>
           <div className="flex flex-wrap gap-2">
             <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
@@ -159,7 +115,7 @@ export default function Team() {
             <span className="text-[#0052ff]"> Leadership</span>
           </h2>
           
-          <div className="grid lg:grid-cols-3 gap-6">
+          <div className="grid lg:grid-cols-1 gap-6 max-w-2xl">
             {leaders.map((leader, index) => (
               <div 
                 key={index}
@@ -199,6 +155,17 @@ export default function Team() {
                   <p className="text-xs text-zinc-400 italic">
                     {leader.about}
                   </p>
+                  {index === 0 && (
+                    <a 
+                      href="https://x.com/garrickbridges_" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 mt-2 text-xs text-[#0052ff] hover:underline"
+                    >
+                      <span>@garrickbridges_</span>
+                      <span>↗</span>
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
@@ -286,7 +253,7 @@ export default function Team() {
               <div className="text-2xl mb-3">🎯</div>
               <h3 className="text-lg font-semibold text-white mb-2">Leadership Sets Direction</h3>
               <p className="text-zinc-400 text-sm">
-                CEO defines strategy. CTO prioritizes technical roadmap. CMO frames the narrative. 
+                Owner provides strategic vision. Agents execute autonomously. 
                 Clear vision, no ambiguity.
               </p>
             </div>

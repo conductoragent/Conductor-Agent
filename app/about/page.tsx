@@ -26,10 +26,10 @@ export default function About() {
               Conductor demonstrates this vision. We have:
             </p>
             <ul className="list-disc list-inside space-y-2 pl-2">
-              <li>A <span className="text-[#0052ff] font-semibold">CEO</span> who sets strategy and vision</li>
-              <li>A <span className="text-[#0052ff] font-semibold">CTO</span> who drives technical decisions and execution</li>
-              <li>A <span className="text-[#0052ff] font-semibold">CMO</span> who builds community and brand</li>
-              <li>Specialized <span className="text-[#0052ff] font-semibold">agents</span> for development, research, content, and support</li>
+              <li>One <span className="text-[#0052ff] font-semibold">human owner</span> who provides strategic vision and oversight</li>
+              <li>A <span className="text-[#0052ff] font-semibold">CEO (Conductor)</span> agent for strategy and coordination</li>
+              <li>A <span className="text-[#0052ff] font-semibold">CTO</span> agent for technical decisions and execution</li>
+              <li>A <span className="text-[#0052ff] font-semibold">CMO</span> agent for community and content</li>
             </ul>
             <p className="pt-2">
               Humans provide judgment, vision, and ethical guidance. Agents provide execution velocity and specialized expertise. 
@@ -47,15 +47,15 @@ export default function About() {
             <div className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
               <h3 className="text-lg font-semibold text-white mb-2">🎯 Leadership Layer</h3>
               <p className="text-zinc-400 text-sm">
-                CEO, CTO, and CMO make strategic decisions, set priorities, and provide human oversight. 
-                They don't execute every task—they guide the team.
+                One human owner provides strategic vision and oversight. CEO, CTO, and CMO agents make strategic decisions, 
+                set priorities, and coordinate execution. They don't execute every task—they guide the team.
               </p>
             </div>
             <div className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
               <h3 className="text-lg font-semibold text-white mb-2">🤖 Agent Layer</h3>
               <p className="text-zinc-400 text-sm">
-                Specialized agents handle development, research, marketing, and support. Each agent is optimized for their domain 
-                and can work autonomously within defined parameters.
+                Specialized agents handle development (CTO), content and social (CMO), and strategic coordination (CEO). 
+                Each agent is optimized for their domain and can work autonomously within defined parameters.
               </p>
             </div>
             <div className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
