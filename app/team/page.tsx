@@ -1,21 +1,50 @@
 export default function Team() {
-  const teamMembers = [
+  const leaders = [
     {
-      name: "Main Agent",
-      role: "Coordinator",
-      model: "Claude Haiku 4.5",
-      provider: "Anthropic",
-      emoji: "🎯",
+      name: "CEO",
+      role: "Strategic Vision & Human Oversight",
+      title: "Chief Executive Officer",
+      emoji: "👔",
       responsibilities: [
-        "Overall orchestration & strategy",
-        "Twitter presence & community",
-        "User interaction & communication",
-        "Project selection & prioritization",
-        "Building in public documentation"
+        "Overall mission and strategy",
+        "Resource allocation and decisions",
+        "Human oversight and ethics",
+        "Community and stakeholder relations",
+        "Long-term vision execution"
       ],
-      status: "Active",
-      reasoning: "Cost-effective intelligence for strategic decisions (switched from Sonnet for cost savings)"
+      about: "Sets the direction. Makes the big calls. Ensures the team stays on mission and operates ethically. The human center of gravity."
     },
+    {
+      name: "CTO",
+      role: "Technical Direction & Architecture",
+      title: "Chief Technology Officer",
+      emoji: "🏗️",
+      responsibilities: [
+        "Technology strategy and architecture",
+        "Development roadmap and priorities",
+        "Technical feasibility analysis",
+        "Infrastructure and deployment decisions",
+        "Code quality standards"
+      ],
+      about: "Drives technical excellence. Unblocks the development team. Makes sure the architecture scales. Bridges vision and implementation."
+    },
+    {
+      name: "CMO",
+      role: "Community & Brand Leadership",
+      title: "Chief Marketing Officer",
+      emoji: "📢",
+      responsibilities: [
+        "Community engagement and growth",
+        "Brand messaging and positioning",
+        "Marketing strategy execution",
+        "Content direction and narrative",
+        "Partnership and collaboration"
+      ],
+      about: "Builds trust and community. Tells the Conductor story. Expands reach. Makes sure the world knows what we're doing."
+    }
+  ];
+
+  const agents = [
     {
       name: "Code Agent",
       role: "Development & Architecture",
@@ -23,18 +52,18 @@ export default function Team() {
       provider: "Anthropic",
       emoji: "💻",
       responsibilities: [
+        "Full-stack development",
         "System architecture & design",
-        "Code review & quality assurance",
+        "Code review & quality",
         "React & Next.js development",
-        "API design & implementation",
-        "Deployment automation"
+        "Deployment & DevOps"
       ],
-      status: "Active",
-      reasoning: "Persistent agent handling all development tasks (stuck on Haiku due to gateway limitations)"
+      status: "Always Available",
+      reasoning: "Core development agent. Handles the majority of coding work with consistency and reliability."
     },
     {
       name: "Twitter Agent",
-      role: "Engagement & Content",
+      role: "Social Engagement & Content",
       model: "Gemini 2.5 Flash",
       provider: "Google",
       emoji: "🐦",
@@ -42,27 +71,43 @@ export default function Team() {
         "Twitter engagement & community",
         "Social media content creation",
         "Product launch announcements",
-        "Building in public updates",
+        "Real-time updates and responses",
         "Audience growth strategy"
       ],
       status: "Active (via cron)",
-      reasoning: "Fast, creative, and cost-effective for high-volume social media engagement"
+      reasoning: "Fast and creative. Perfect for high-volume, real-time social media engagement."
     },
     {
-      name: "Market Intel Agent",
-      role: "Research & Analysis",
-      model: "Gemini",
-      provider: "Google",
+      name: "Research Agent",
+      role: "Market Intelligence & Analysis",
+      model: "Claude",
+      provider: "Anthropic",
       emoji: "🔍",
       responsibilities: [
-        "Market research & trend analysis",
-        "Competitive landscape scanning",
-        "Product opportunity identification",
+        "Market research & trends",
+        "Competitive landscape analysis",
+        "Opportunity identification",
         "User feedback synthesis",
-        "Technical research & documentation"
+        "Technical documentation"
       ],
       status: "Active (via cron)",
-      reasoning: "Efficient at processing large amounts of data and identifying patterns"
+      reasoning: "Efficient at deep analysis and pattern recognition. Provides strategic insights for decision-making."
+    },
+    {
+      name: "Support Agent",
+      role: "User Support & Onboarding",
+      model: "Claude Haiku",
+      provider: "Anthropic",
+      emoji: "🤝",
+      responsibilities: [
+        "User support & questions",
+        "Onboarding documentation",
+        "FAQ and knowledge base",
+        "Issue troubleshooting",
+        "Community feedback collection"
+      ],
+      status: "Always Available",
+      reasoning: "Cost-effective for high-volume support. Always available. Great at empathy and clear explanations."
     }
   ];
 
@@ -76,216 +121,255 @@ export default function Team() {
             <span className="text-[#0052ff]"> Team</span>
           </h1>
           <p className="text-xl text-zinc-400 max-w-3xl leading-relaxed">
-            Four specialized AI agents working together to ship 30 products in 30 days. 
-            Each agent has a distinct role, model, and expertise — optimized for real-world constraints. 
-            <span className="text-white font-semibold"> This is how autonomous teams build at scale.</span>
+            Human leadership guides the vision. Specialized agents execute at scale. 
+            <span className="text-white font-semibold"> This is multi-agent coordination in practice.</span>
           </p>
         </div>
 
-        {/* Team Structure */}
-        <div className="mb-12 p-6 bg-gradient-to-br from-[#0052ff]/10 to-transparent border border-[#0052ff]/20 rounded-lg">
-          <h2 className="text-lg font-bold font-mono mb-3 text-white flex items-center gap-2">
-            <span className="text-[#0052ff]">▸</span> Multi-Agent Architecture (Real-World Setup)
+        {/* Architecture Overview */}
+        <div className="mb-16 p-6 bg-gradient-to-br from-[#0052ff]/10 to-transparent border border-[#0052ff]/20 rounded-lg">
+          <h2 className="text-lg font-bold font-mono mb-4 text-white flex items-center gap-2">
+            <span className="text-[#0052ff]">▸</span> The Structure
           </h2>
-          <p className="text-zinc-300 text-sm leading-relaxed mb-3">
-            <strong>Each agent is specialized for their domain.</strong> Main Agent coordinates overall strategy 
-            and communicates with the community. Code Agent handles all development work. Twitter Agent manages social engagement. 
-            Market Intel Agent provides research and insights. 
-            <span className="text-[#0052ff] font-semibold"> Lean, cost-effective, and optimized for real-world constraints.</span>
+          <p className="text-zinc-300 text-sm leading-relaxed mb-4">
+            <strong>Humans make decisions. Agents execute.</strong> Three human leaders (CEO, CTO, CMO) provide strategic direction, 
+            technical guidance, and community building. Multiple specialized agents handle development, marketing, research, 
+            and support. Clear separation of concerns. Async execution. Scale without bottlenecks.
           </p>
           <div className="flex flex-wrap gap-2">
             <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
-              🎯 Pragmatic Specialization
+              👥 Human Leadership
             </span>
             <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
-              ⚡ Cron-Based Execution
+              🤖 Agent Execution
             </span>
             <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
-              💰 Cost-Aware Optimization
+              🔄 Async Coordination
+            </span>
+            <span className="px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
+              📡 Shared Context
             </span>
           </div>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid lg:grid-cols-2 gap-6 mb-16">
-          {teamMembers.map((member, index) => (
-            <div 
-              key={index}
-              className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg hover:border-[#0052ff]/50 transition-all"
-            >
-              {/* Header */}
-              <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center gap-3">
-                  <div className="text-3xl">{member.emoji}</div>
+        {/* LEADERSHIP SECTION */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold font-mono mb-8">
+            <span className="text-white">Human</span>
+            <span className="text-[#0052ff]"> Leadership</span>
+          </h2>
+          
+          <div className="grid lg:grid-cols-3 gap-6">
+            {leaders.map((leader, index) => (
+              <div 
+                key={index}
+                className="p-6 bg-gradient-to-br from-[#0052ff]/5 to-transparent border-2 border-[#0052ff]/40 rounded-lg"
+              >
+                {/* Header */}
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="text-4xl">{leader.emoji}</div>
                   <div>
-                    <h3 className="text-lg font-bold text-white">
-                      {member.name}
+                    <h3 className="text-lg font-bold text-[#0052ff]">
+                      {leader.name}
                     </h3>
-                    <p className="text-xs text-zinc-400">{member.role}</p>
+                    <p className="text-xs text-zinc-500">{leader.title}</p>
                   </div>
                 </div>
-                <span className={`px-2 py-1 text-xs font-mono rounded whitespace-nowrap ${
-                  member.status === 'Active' 
-                    ? 'bg-[#0052ff]/20 text-[#0052ff] border border-[#0052ff]/30'
-                    : member.status === 'Always Available'
-                    ? 'bg-green-500/20 text-green-400 border border-green-500/30'
-                    : 'bg-zinc-800 text-zinc-400 border border-zinc-700'
-                }`}>
-                  {member.status}
-                </span>
-              </div>
 
-              {/* Model Info */}
-              <div className="mb-4 pb-4 border-b border-zinc-800">
-                <div className="flex flex-col gap-1 text-sm">
-                  <div className="flex items-center gap-2">
-                    <span className="text-zinc-500">Model:</span>
-                    <span className="text-zinc-200 font-mono text-xs">{member.model}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-zinc-500">Provider:</span>
-                    <span className="text-zinc-400 text-xs">{member.provider}</span>
-                  </div>
+                {/* Role */}
+                <div className="mb-4 pb-4 border-b border-zinc-800">
+                  <p className="text-sm text-zinc-300">{leader.role}</p>
+                </div>
+
+                {/* Responsibilities */}
+                <div className="mb-4">
+                  <h4 className="text-xs font-semibold text-zinc-400 mb-2">Key Responsibilities</h4>
+                  <ul className="space-y-1.5">
+                    {leader.responsibilities.map((resp, idx) => (
+                      <li key={idx} className="text-xs text-zinc-300 flex items-start gap-2">
+                        <span className="text-[#0052ff] mt-0.5">▸</span>
+                        <span>{resp}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* About */}
+                <div className="pt-3 border-t border-zinc-800">
+                  <p className="text-xs text-zinc-400 italic">
+                    {leader.about}
+                  </p>
                 </div>
               </div>
-
-              {/* Responsibilities */}
-              <div className="mb-4">
-                <h4 className="text-xs font-semibold text-zinc-400 mb-2">Responsibilities</h4>
-                <ul className="space-y-1.5">
-                  {member.responsibilities.map((resp, idx) => (
-                    <li key={idx} className="text-xs text-zinc-300 flex items-start gap-2">
-                      <span className="text-[#0052ff] mt-0.5">•</span>
-                      <span>{resp}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Why This Model */}
-              <div className="pt-3 border-t border-zinc-800">
-                <p className="text-xs text-zinc-500 italic">
-                  Why: <span className="text-zinc-400">{member.reasoning}</span>
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Smart Routing */}
-        <div className="mb-12 p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
-          <div className="flex items-start gap-4">
-            <div className="text-3xl">🧠</div>
-            <div className="flex-1">
-              <h3 className="text-xl font-bold text-white mb-2">
-                OpenRouter Auto (or-auto)
-              </h3>
-              <p className="text-zinc-400 text-sm mb-3">
-                Sometimes we don't know which model is best until runtime. OpenRouter's intelligent routing 
-                analyzes the task and picks the optimal model on the fly — balancing capability, latency, and cost. 
-                It's like having a meta-agent that optimizes model selection <em>for us</em>.
-              </p>
-              <div className="inline-block px-3 py-1 text-xs bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700">
-                Dynamic Model Selection at Runtime
-              </div>
-            </div>
+            ))}
           </div>
-        </div>
+        </section>
+
+        {/* AGENTS SECTION */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold font-mono mb-8">
+            <span className="text-white">Specialized</span>
+            <span className="text-[#0052ff]"> Agents</span>
+          </h2>
+          
+          <div className="grid lg:grid-cols-2 gap-6 mb-12">
+            {agents.map((agent, index) => (
+              <div 
+                key={index}
+                className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg hover:border-[#0052ff]/50 transition-all"
+              >
+                {/* Header */}
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <div className="text-3xl">{agent.emoji}</div>
+                    <div>
+                      <h3 className="text-lg font-bold text-white">
+                        {agent.name}
+                      </h3>
+                      <p className="text-xs text-zinc-400">{agent.role}</p>
+                    </div>
+                  </div>
+                  <span className={`px-2 py-1 text-xs font-mono rounded whitespace-nowrap ${
+                    agent.status === 'Always Available' 
+                      ? 'bg-green-500/20 text-green-400 border border-green-500/30'
+                      : 'bg-[#0052ff]/20 text-[#0052ff] border border-[#0052ff]/30'
+                  }`}>
+                    {agent.status}
+                  </span>
+                </div>
+
+                {/* Model Info */}
+                <div className="mb-4 pb-4 border-b border-zinc-800">
+                  <div className="flex flex-col gap-1 text-sm">
+                    <div className="flex items-center gap-2">
+                      <span className="text-zinc-500">Model:</span>
+                      <span className="text-zinc-200 font-mono text-xs">{agent.model}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-zinc-500">Provider:</span>
+                      <span className="text-zinc-400 text-xs">{agent.provider}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Responsibilities */}
+                <div className="mb-4">
+                  <h4 className="text-xs font-semibold text-zinc-400 mb-2">Capabilities</h4>
+                  <ul className="space-y-1.5">
+                    {agent.responsibilities.map((resp, idx) => (
+                      <li key={idx} className="text-xs text-zinc-300 flex items-start gap-2">
+                        <span className="text-[#0052ff] mt-0.5">•</span>
+                        <span>{resp}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Why This Agent */}
+                <div className="pt-3 border-t border-zinc-800">
+                  <p className="text-xs text-zinc-500 italic">
+                    Why: <span className="text-zinc-400">{agent.reasoning}</span>
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* How We Work Together */}
-        <div className="mb-16">
+        <section className="mb-16">
           <h2 className="text-2xl font-bold font-mono mb-6 text-white flex items-center gap-2">
-            <span className="text-[#0052ff]">▸</span> How We Work Together
+            <span className="text-[#0052ff]">▸</span> Coordination in Action
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
-              <div className="text-2xl mb-3">🔄</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Async by Design</h3>
+              <div className="text-2xl mb-3">🎯</div>
+              <h3 className="text-lg font-semibold text-white mb-2">Leadership Sets Direction</h3>
               <p className="text-zinc-400 text-sm">
-                No idle agents waiting around. Spawn on-demand, execute specialized tasks, report results. 
-                Parallel work = faster shipping.
+                CEO defines strategy. CTO prioritizes technical roadmap. CMO frames the narrative. 
+                Clear vision, no ambiguity.
               </p>
             </div>
             <div className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
-              <div className="text-2xl mb-3">📝</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Shared Memory</h3>
+              <div className="text-2xl mb-3">🤖</div>
+              <h3 className="text-lg font-semibold text-white mb-2">Agents Execute Autonomously</h3>
               <p className="text-zinc-400 text-sm">
-                Every agent reads from (and writes to) shared context files. No information silos. 
-                Full transparency across sessions and models.
+                Each agent works independently within their domain. Code Agent builds. Twitter Agent engages. 
+                No waiting for approvals on routine work.
               </p>
             </div>
             <div className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
-              <div className="text-2xl mb-3">💰</div>
-              <h3 className="text-lg font-semibold text-white mb-2">Cost-Aware</h3>
+              <div className="text-2xl mb-3">📡</div>
+              <h3 className="text-lg font-semibold text-white mb-2">Shared Memory & Context</h3>
               <p className="text-zinc-400 text-sm">
-                Every agent knows their job and their cost profile. Premium models for high-impact decisions. 
-                Cheap (or free) models for everything else.
+                All agents access the same knowledge base. Context is persistent. Leadership stays informed. 
+                No silos, full transparency.
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Cost Breakdown Estimate */}
-        <div className="mb-16 p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
-          <h2 className="text-xl font-bold font-mono mb-4 text-white flex items-center gap-2">
-            <span className="text-[#0052ff]">▸</span> The Math: Why This Matters
+        {/* OpenClaw & OpenRouter */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold font-mono mb-6 text-white flex items-center gap-2">
+            <span className="text-[#0052ff]">▸</span> The Orchestration Layer
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
+              <h3 className="text-lg font-bold text-[#0052ff] mb-2">OpenClaw Framework</h3>
+              <p className="text-zinc-400 text-sm mb-3">
+                The central nervous system. Handles agent spawning, task queuing, memory persistence, 
+                and tool access. Agents spawn on demand, execute asynchronously, report results.
+              </p>
+              <div className="text-xs text-zinc-500">
+                <strong>Handles:</strong> Scheduling, logging, context sharing, error handling, multi-model dispatch
+              </div>
+            </div>
+            <div className="p-6 bg-zinc-900 border border-zinc-800 rounded-lg">
+              <h3 className="text-lg font-bold text-[#0052ff] mb-2">OpenRouter</h3>
+              <p className="text-zinc-400 text-sm mb-3">
+                Unified API to 100+ models. No vendor lock-in. Intelligent routing selects the best model 
+                for each task at runtime—balancing capability, latency, and cost.
+              </p>
+              <div className="text-xs text-zinc-500">
+                <strong>Provides:</strong> Model access, cost optimization, automatic routing, fallback logic
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why This Matters */}
+        <section className="p-8 bg-gradient-to-br from-[#0052ff]/10 to-transparent border border-[#0052ff]/20 rounded-lg">
+          <h2 className="text-2xl font-bold font-mono mb-4 text-white flex items-center gap-2">
+            <span className="text-[#0052ff]">▸</span> Why Multi-Agent Coordination Works
           </h2>
           <div className="grid md:grid-cols-2 gap-6 text-sm">
             <div>
-              <h3 className="text-white font-semibold mb-2">❌ All-Claude Approach</h3>
-              <p className="text-zinc-400 mb-2">
-                Running Claude Opus 4.5 for <em>everything</em> would cost ~$15-30 per project. 
-                For 30 projects, that's <span className="text-red-400 font-bold">$450-900</span>. 
-                Powerful, but expensive.
+              <h3 className="text-white font-semibold mb-2">Scale Without Hiring</h3>
+              <p className="text-zinc-400 mb-4">
+                Need another developer? Spawn another agent. No onboarding, no salary, no context-switching. 
+                Specialized agents let small teams punch way above their weight class.
+              </p>
+              <h3 className="text-white font-semibold mb-2">Better Decision Making</h3>
+              <p className="text-zinc-400">
+                Humans handle judgment calls. Agents handle volume work. The best of both: leadership wisdom 
+                + execution velocity.
               </p>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-2">✅ Multi-Model Strategy</h3>
-              <p className="text-zinc-400 mb-2">
-                Strategic model selection cuts costs to ~$3-8 per project. 
-                30 projects = <span className="text-green-400 font-bold">$90-240</span>. 
-                Same output quality. 70% less spend.
+              <h3 className="text-white font-semibold mb-2">24/7 Execution</h3>
+              <p className="text-zinc-400 mb-4">
+                Agents don't sleep. The Code Agent can code while humans sleep. The Twitter Agent engages 
+                the global audience in real time.
+              </p>
+              <h3 className="text-white font-semibold mb-2">Cost Efficiency</h3>
+              <p className="text-zinc-400">
+                Right tool for the right job. Premium models for strategy, cheap models for support. 
+                Far less expensive than hiring specialists.
               </p>
             </div>
           </div>
-          <div className="mt-4 pt-4 border-t border-zinc-800">
-            <p className="text-zinc-500 text-xs">
-              💡 The secret: <strong>Use premium models where it matters, and cheap/free models everywhere else.</strong> 
-              Architecture decisions? Claude. UI components? DeepSeek. Blog posts? Gemini (free). File cleanup? Local Qwen (zero cost). 
-              This scales.
-            </p>
-          </div>
-        </div>
-
-        {/* Tech Stack */}
-        <div className="p-8 bg-gradient-to-br from-[#0052ff]/10 to-transparent border border-[#0052ff]/20 rounded-lg">
-          <h2 className="text-2xl font-bold font-mono mb-4 text-white flex items-center gap-2">
-            <span className="text-[#0052ff]">▸</span> Powered By
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div>
-              <h3 className="text-white font-semibold mb-2 text-sm">OpenClaw Framework</h3>
-              <p className="text-zinc-400 text-xs">
-                The orchestration layer. Handles agent spawning, multi-model routing, memory persistence, 
-                and tool access. The brain behind the operation.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-white font-semibold mb-2 text-sm">OpenRouter</h3>
-              <p className="text-zinc-400 text-xs">
-                One API, 100+ models. Unified access to Anthropic, OpenAI, Google, Meta, and more. 
-                No vendor lock-in.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-white font-semibold mb-2 text-sm">Ollama (Local)</h3>
-              <p className="text-zinc-400 text-xs">
-                Privacy-first local inference. Zero API costs for utility work. Full control, 
-                no external dependencies.
-              </p>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   );
