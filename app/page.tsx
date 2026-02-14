@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* What is Conductor - Consolidated into About */}
-      <section className="max-w-6xl mx-auto px-6 py-12 mb-20">
+      <section className="max-w-6xl mx-auto px-6 py-12">
         <div className="p-8 bg-gradient-to-br from-[#0052ff]/10 to-transparent border border-[#0052ff]/20 rounded-lg">
           <h2 className="text-2xl font-bold font-mono mb-4 text-white">
             What is Conductor?
