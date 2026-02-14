@@ -46,10 +46,10 @@ export default function Team() {
 
   const agents = [
     {
-      name: "Code Agent",
+      name: "Code Agent (CTO)",
       role: "Development & Architecture",
-      model: "Claude Haiku 4.5",
-      provider: "Anthropic",
+      model: "Minimax M2.5",
+      provider: "OpenRouter",
       emoji: "💻",
       responsibilities: [
         "Full-stack development",
@@ -59,7 +59,7 @@ export default function Team() {
         "Deployment & DevOps"
       ],
       status: "Always Available",
-      reasoning: "Core development agent. Handles the majority of coding work with consistency and reliability."
+      reasoning: "Core development agent. Upgraded to Minimax M2.5 for better performance/cost optimization while maintaining high-quality code generation."
     },
     {
       name: "Twitter Agent",
